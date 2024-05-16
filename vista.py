@@ -87,7 +87,9 @@ class Ventana:
                 print("La ventana cambio de tema a: ", self.combo_theme.get())
                 return funcion(*args)
             return wrapper
+
         
+        ## Decorador de ventana
         @decorador_cambiar_tema
         def cambiar_tema(self, master):
             tema_seleccionado = self.combo_theme.get()
